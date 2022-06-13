@@ -1,0 +1,187 @@
+.required:after{content:" *";color:red}.google-maps{position:relative;padding-bottom:75%;height:0;overflow:hidden}.google-maps iframe{position:absolute;top:0;left:0;width:100%!important;height:100%!important}.bg-facebook{background-color:#3b5998}.bg-twitter{background-color:#1da1f2}.bg-google{background-color:#ea4335}.bg-instagram{background-color:#e1306c}.bs-cover{background-size:cover}.r-0{right:0}.mw-180{max-width:180px}.mw-140{max-width:140px}.i-va{vertical-align:-.125em}
+/*================================================
+About Area CSS
+=================================================*/
+.about-area {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .about-area .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .about-area .container-fluid .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .about-area .container-fluid .row .col-lg-6 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .about-image {
+    height: 100%;
+    margin-left: 20px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../src/assets/firstbanner.jpg);
+  }
+  
+  .about-image img {
+    display: none;
+  }
+  
+  .about-content .content {
+    max-width: 600px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 150px;
+  }
+  
+  .about-content .text {
+    max-width: 600px;
+    padding-left: 20px;
+  }
+  
+  .about-content .sub-title {
+    display: block;
+    margin-bottom: 12px;
+    color: var(--mainColor);
+    text-transform: uppercase;
+    font-size: 15.5px;
+    font-weight: 700;
+  }
+  
+  .about-content h2 {
+    margin-bottom: 0;
+    font-size: 42px;
+  }
+  
+  .about-content p {
+    margin-top: 12px;
+  }
+  
+  .about-content .funfacts-list {
+    padding-left: 0;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 0;
+    margin-top: 30px;
+  }
+  
+  .about-content .funfacts-list li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.333333%;
+            flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .about-content .funfacts-list li .list {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .about-content .funfacts-list li .list i {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: var(--mainColor);
+    font-size: 40px;
+    line-height: 1;
+  }
+  
+  .about-content .funfacts-list li .list h3 {
+    font-size: 46px;
+    line-height: 1;
+    margin-bottom: 10px;
+    padding-left: 50px;
+  }
+  
+  .about-content .funfacts-list li .list p {
+    display: block;
+    line-height: initial;
+    padding-right: 5px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .about-content .funfacts-list li .list .odometer-formatting-mark {
+    display: none;
+  }
+  
+  .about-content .default-btn {
+    margin-top: 10px;
+  }
+  
+  .about-content .features-list {
+    padding-left: 0;
+    list-style-type: none;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  
+  .about-content .features-list li {
+    margin-bottom: 20px;
+    position: relative;
+    color: var(--optionalColor);
+    padding-left: 60px;
+    font-weight: 600;
+  }
+  
+  .about-content .features-list li i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    background-color: var(--mainColor);
+    color: var(--whiteColor);
+    border-radius: 50%;
+    line-height: 45px;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+  }
+  
+  .about-content .features-list li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .about-content .features-list li:hover i {
+    background-color: var(--whiteColor);
+    color: var(--mainColor);
+    -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-img {
+    text-align: center;
+  }
+  
+  .shape15 {
+    position: absolute;
+    right: 0;
+    top: 10%;
+    text-align: right;
+    z-index: -1;
+  }
+  
+  .shape15 img {
+    -webkit-animation: movebounce 5s linear infinite;
+            animation: movebounce 5s linear infinite;
+    max-width: 50%;
+  }

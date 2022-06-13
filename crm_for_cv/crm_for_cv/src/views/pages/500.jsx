@@ -1,0 +1,46 @@
+import React, { Component, lazy, useState } from "react";
+import apple from './Apple.webp'
+import StripeContainer from "../../components/stripepayments/StripeContainer";
+import { ReactComponent as IconBugFill } from "bootstrap-icons/icons/bug-fill.svg";
+
+import Testpayment from "../cart/macbook";
+const Search = lazy(() => import("../../components/Search"));
+
+
+class InternalServerErrorView extends Component {
+
+
+
+  constructor(props) {
+    super();
+    this.state = {};
+  }
+
+
+
+
+  render() {
+    
+
+    return (
+      <div className="container text-center p-5">
+        <div className="display-1">
+          <IconBugFill className="i-va text-warning" />
+          500
+        </div>
+        <h1 className="mb-3">Internal Server Error</h1>
+        <div className="row justify-content-md-center">
+          <div className="col-md-6">
+            <Search />
+          </div>
+
+          <br/>
+         
+           <Testpayment/>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default InternalServerErrorView;

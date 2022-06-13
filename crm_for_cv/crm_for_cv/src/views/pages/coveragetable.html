@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content ="IE-edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">>
+<title>Coverage areas of Cable vision</title>
+
+
+
+
+</head>
+
+<body>
+<table>
+<thead>
+
+<th>Town</th>
+<th>Faisalabad</th>
+
+
+
+</thead>
+<tbody id ="tbody1"></tbody>
+
+</table>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+
+
+
+<script id= "MainScript">
+const firebaseConfig = {
+  apiKey: "AIzaSyA5HVNo-9bWtMNQy71D9MoAxnzxa9RfYEY",
+  authDomain: "cable-vision-786b4.firebaseapp.com",
+  databaseURL: "https://cable-vision-786b4-default-rtdb.firebaseio.com",
+  projectId: "cable-vision-786b4",
+  storageBucket: "cable-vision-786b4.appspot.com",
+  messagingSenderId: "800867087573",
+  appId: "1:800867087573:web:ca0a77cff421cf61a71e5c",
+  measurementId: "G-X8ECMNXTMV"
+};
+
+firebase.initializeApp(firebaseConfig);
+let db=firebase.firestore();
+
+
+//..............................
+
+function GetAllDataOnce(){
+    db.collection("coverage").get().then((querySnapshot)=>{
+        var coverage=[];
+        querySnapshot.forEach(doc=>{
+            coverage.push(doc.data());
+        });
+
+        console.log(querySnapshot);
+        console.log(coverage);
+    });
+}
+window.onload=GetAllDataOnce;
+
+</script>
+</body>
+
+</html>
